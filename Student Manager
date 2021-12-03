@@ -1,0 +1,21 @@
+
+#include <bits/stdc.h>
+using namspace std;
+void draw_table(int n);
+{
+    cout<<"+--STT--+----Ho va Ten----+--Diem--+--Xep hang--+";
+    for (int i=1; i<=n+1;i++)
+    {
+        for (int j=1; j<=49;j++)
+        {
+            if(j==1||j==9||j==27||j==36||j==49)
+                cout<<"+";
+            else 
+            {
+                if(i==n+1) cout<<"-";
+                else cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
